@@ -11,7 +11,7 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # Gets your code from the repo
+        uses: actions/checkout@v4  # Gets your code from the repo
       
       - name: Set up Python
         uses: actions/setup-python@v4  # Installs Python
@@ -32,7 +32,7 @@ jobs:
           python test_drive.py
       
       - name: Upload downloaded files as artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: drive-files
           path: downloaded/
